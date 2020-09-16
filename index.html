@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ProjectManager</title>
+  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-dark bg-dark sticky-top" style="justify-content: center;">
+    <span style="color: white;">
+      DRAG AND DROP
+    </span>
+  </nav>
+
+  <!-- ACCORDION -->
+  <div class="accordion accordionWrapper" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            ADD PROJECT DETAILS
+          </button>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <form class="formClass">
+            <div class="form-group">
+              <label for="projTitle">PROJECT TITLE</label>
+              <input type="text" id="projTitle" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="projDesc">PROJECT DESCRIPTION</label>
+              <textarea name="" id="projDesc" cols="30" rows="2" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="projDays">PROJECT DURATION (In Days)</label>
+              <input type="number" class="form-control" id="projDays">
+            </div>
+            <div style="text-align: center;">
+              <button class="btn btn-primary" id="addBtn">ADD</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm">
+          <div class="card" id="unfinishedCard">
+            <h5 class="card-header bg-danger text-white">UNFINISHED PROJECTS</h5>
+            <div class="card-body">
+              <ul class="list-group" id="unfinishedList">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" id="finishedCard">
+            <h5 class="card-header bg-success text-white">FINISHED PROJECTS</h5>
+            <div class="card-body">
+              <ul class="list-group" id="finishedList">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</html>

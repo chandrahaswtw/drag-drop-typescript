@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.formClass {
+  margin : 1rem;
+}
+
+.accordionWrapper{
+  margin : 1rem !important
+}
