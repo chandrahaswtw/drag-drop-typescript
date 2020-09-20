@@ -1,5 +1,5 @@
-import {autobind} from './Decorators/autobind.js';
-import {projInterface} from './Interfaces/projectStruct.js';
+import {autobind} from './Decorators/autobind';
+import {projInterface} from './Interfaces/projectStruct';
 
     // CENTRAL STATE
     class Projects {
